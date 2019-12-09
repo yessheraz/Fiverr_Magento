@@ -1,4 +1,4 @@
-FROM pamidu/Magento_labba:latest
+FROM pamidu/magento_labba:latest
 WORKDIR /var/www/html/Magento_labba
 COPY * /var/www/html/Magento_labba/
 CMD chmod -R 777 /var/www/html
