@@ -1,4 +1,4 @@
-FROM pamidu/magento2:latest
-COPY . /var/www/html
-CMD ./start.sh
+FROM xantek/magento2devbox-web
+COPY . /var/www/magento2/
+CMD chmod -R 777 /var/www
 
