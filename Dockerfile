@@ -1,6 +1,5 @@
-FROM sensson/magento2
-COPY * /var/www/html/
+FROM quay.io/continuouspipe/magento2-nginx-php7.2-ng:latest
+ARG IMAGE_VERSION=3
 
-# Start
-EXPOSE 80 443
-#CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+COPY . /app
+RUN container build
